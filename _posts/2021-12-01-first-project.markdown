@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: post
 title: "Project A" 
 author: "Trish"
 permalink: "/project-a"
 ---
 
-lets PUT CONTENT IN! 
+# Heading Level 1 
+## Heading Level 2 
+### Heading Level 3 
+#### Heading Level 4 
