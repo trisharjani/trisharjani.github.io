@@ -2,5 +2,6 @@
 layout: page
 title: "Project A" 
 author: "Trish"
-permalink: "/projectA"
 ---
+
+lets PUT CONTENT IN! 
