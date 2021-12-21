@@ -18,14 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: The IRIS Coalition
+title: IRIS 
 email: trish.harjani@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The coalition called IRIS is a collaborative project between the 
-  Vaccine Confidence Project (London School of Hygiene & Tropical Medicine), 
-  University of Cambridge, Sapienza University of Rome, 
-  Ca’ Foscari University of Venice, City University of London (and the Alan Turing Institute) 
-  and the Harvard T.H. Chan School of Public Health
+  IRIS is a coalition between the Vaccine Confidence Project (London School of Hygiene & Tropical Medicine), University of Cambridge, Sapienza University of Rome, Ca’ Foscari University of Venice, City University of London (and the Alan Turing Institute) and the Harvard T.H. Chan School of Public Health. The collaborative project is a research initiative dedicated to understanding ‘infodemics’ and promote healthy information ecosystems. This website is a repository containing all our ongoing projects containing links to datasets and code. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
@@ -38,6 +34,11 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values: 
+      image: true 
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

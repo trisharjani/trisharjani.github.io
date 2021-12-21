@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Example Analysis Page" 
+title: "Project 2" 
 author: "Trish"
 permalink: "/project-a"
 ---

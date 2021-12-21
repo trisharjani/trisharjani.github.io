@@ -42,3 +42,60 @@ layout: default
     {% endif %}
   </div>
 {% endif %}
+
+<div class="image-grid">
+  <img src = "assets/img/lshtm_logo.png" alt = "image"> 
+  <img src = "assets/img/camb.png" alt = "image"> 
+  <img src = "assets/img/sapienza.png" alt = "image"> 
+  <img src = "assets/img/foscari2.png" alt = "image"> 
+  <img src = "assets/img/cityuni.png" alt = "image"> 
+  <img src = "assets/img/harvard.png" alt = "image"> 
+</div>
+
+<style>
+  .image-grid { 
+    --gap: 16px; /* gap between the photos */
+    --num-cols: 3; /*number of columns */
+    --row-height: 100px; 
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr); /*use the variable created earlier; num-cols and have them equal width */
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid > img {
+  width:100%;
+  height:100%;
+  object-fit: contain;
+}
+
+.image-grid-col-2{
+  grid-column: span 2;
+}
+
+.image-grid-col-3{
+  grid-column: span 3;
+}
+
+.image-grid-row-2{
+  grid-row: span 2;
+}
+
+/*making it work for mobile phones!*/
+@media screen and (max-width: 700px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 50px;
+  }
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
