@@ -2,7 +2,7 @@
 layout: post
 title: "Project 2" 
 author: "Trish"
-permalink: "/project-a"
+permalink: "/project-2"
 ---
 
 # 
